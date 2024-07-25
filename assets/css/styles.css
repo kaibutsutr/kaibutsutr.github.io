@@ -343,18 +343,6 @@ flex-direction: row;
 justify-content: space-between;
 align-items: center;
 
-
-
-
-
-
-
-
-
-
-
-
-
 }
 #navbar-bottom-menu a{
 
@@ -376,7 +364,7 @@ color: #000000;
 /* Auto layout */
 display: flex;
 flex-direction: row;
-justify-content: space-between;
+justify-content:flex-start;
 align-items: center;
 padding: 0px;
 gap: 24px;
