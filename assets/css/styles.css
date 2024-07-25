@@ -1,0 +1,390 @@
+/* General CSS reset and base styles */
+
+/* CSS variables */
+:root {
+    --color-white: #ffffff;
+    --color-white-300: rgba(255, 255, 255, 0.3);
+    --color-white-800: rgba(255, 255, 255, 0.8);
+    --color-black: #1a1a1a;
+    --color-primary: #1a1a1a;
+    --color-secondary: #6C757D;
+    --color-blue: #2F2483;
+    --color-cyan: #009EE3;
+    --color-gradient1: radial-gradient(117.9% 165.88% at 100% 0%, #009EE3 0%, #2F2483 100%);
+    --color-brand: #57b3fe;
+    --color-highlight: #00a077;
+    --color-dark: #0d0d0d;
+    --color-orange-300: #ffe7db;
+    --color-orange-600: #fead86;
+    --color-green-300: #e7f2ef;
+    --color-green-400: #c0f2ef;
+    --color-green-500: #51a690;
+    --color-green-600: #00a198;
+    --color-yellow-300: #faf3d8;
+    --color-yellow-400: #ffcf00;
+    --color-purple-300: #ede7f2;
+    --color-purple-600: #75578e;
+    --color-blue-300: #d8f0fa;
+    --color-blue-600: #0985b9;
+    --font-prompt: "Prompt", sans-serif;
+    
+    
+    
+}
+
+/**
+   * Set up a decent box model on the root element
+   
+   */
+
+html {
+    box-sizing: border-box;
+}
+
+/**
+   * Make all elements from the DOM inherit from the parent box-sizing
+   * Since `*` has a specificity of 0, it does not override the `html` value
+   * making all elements inheriting from the root box-sizing value
+   * See: https://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/
+   */
+
+*,/* Rectangle 13 */
+
+
+
+
+
+*::before,
+*::after {
+    box-sizing: border-box;
+    
+}
+
+/* body has default margin */
+body {
+    margin: 0;
+}
+
+/* h1-h6 has default margin top/bottom */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0 0 20px;
+    font-family: var(--font-prompt);
+    font-weight: 500;
+    color: var(--color-primary);
+}
+
+/* p tag has default margin top/bottom */
+p {
+    margin: 0 0 20px;
+    
+    
+    
+    
+}
+
+/* ul/ol has default maring,padding and list style like bullets */
+ul,
+ol {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+/* anchor tag has default decoration underline */
+a {
+    text-decoration: none;
+    
+}
+
+/* Responsive image property */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Font */
+.prompt-thin {
+    font-family: "Prompt", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+  }
+  
+  .prompt-extralight {
+    font-family: "Prompt", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+  }
+  
+  .prompt-light {
+    font-family: "Prompt", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+  }
+  
+  .prompt-regular {
+    font-family: "Prompt", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .prompt-medium {
+    font-family: "Prompt", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+  }
+  
+  .prompt-semibold {
+    font-family: "Prompt", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+  }
+  
+  .prompt-bold {
+    font-family: "Prompt", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+  .prompt-extrabold {
+    font-family: "Prompt", sans-serif;
+    font-weight: 800;
+    font-style: normal;
+  }
+  
+  .prompt-black {
+    font-family: "Prompt", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+  }
+  
+  .prompt-thin-italic {
+    font-family: "Prompt", sans-serif;
+    font-weight: 100;
+    font-style: italic;
+  }
+  
+  .prompt-extralight-italic {
+    font-family: "Prompt", sans-serif;
+    font-weight: 200;
+    font-style: italic;
+  }
+  
+  .prompt-light-italic {
+    font-family: "Prompt", sans-serif;
+    font-weight: 300;
+    font-style: italic;
+  }
+  
+  .prompt-regular-italic {
+    font-family: "Prompt", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+  }
+  
+  .prompt-medium-italic {
+    font-family: "Prompt", sans-serif;
+    font-weight: 500;
+    font-style: italic;
+  }
+  
+  .prompt-semibold-italic {
+    font-family: "Prompt", sans-serif;
+    font-weight: 600;
+    font-style: italic;
+  }
+  
+  .prompt-bold-italic {
+    font-family: "Prompt", sans-serif;
+    font-weight: 700;
+    font-style: italic;
+  }
+  
+  .prompt-extrabold-italic {
+    font-family: "Prompt", sans-serif;
+    font-weight: 800;
+    font-style: italic;
+  }
+  
+  .prompt-black-italic {
+    font-family: "Prompt", sans-serif;
+    font-weight: 900;
+    font-style: italic;
+  }
+  
+/* 
+  Page wrapper styles:
+  This style will not let any elements to overflow from the page wrapper 
+  */
+
+  #page-wrapper {
+    position: relative;
+    overflow: hidden;
+}
+
+/* Typography */
+body {
+    font-family: var(--font-prompt);
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 300;
+    color: var(--color-primary);
+}
+
+/* Generic container styles */
+.container {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+    /* design container width is 1170px so with left/right spacing of 20px, 
+      the container box-model width becomes 1210px.
+      So we are setting max-width to 1210px which makes the container also responsive due to max-width property
+    */
+    max-width: 1210px;
+}
+
+
+/* Navbar */
+.navbar{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 109px;
+
+/* Auto layout */
+
+padding: 0px;
+
+
+
+
+
+}
+
+/* Navbar-Top */
+.navbar-top{
+
+width: 100%;
+height: 37px;
+
+background: linear-gradient(89.95deg, #2F2483 -16.03%, #009EE3 110.22%);
+
+/
+}
+
+
+#navbar-top-menu {
+
+/* Auto layout */
+padding: 5px;
+display: flex;
+flex-direction: row;
+align-items: flex-start;
+justify-content: space-between;
+
+
+
+
+
+
+
+}
+#navbar-top-menu a{
+  color: var(--color-white);
+  font-family: "Prompt", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  
+}
+
+/* Bireysel */
+
+
+/* Navbar-bottom */
+.navbar-bottom {
+    
+/* Navbar-bottom */
+
+/* Auto layout */
+/* Navbar-bottom */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 13px 151px;
+gap: 24px;
+
+margin: 0 auto;
+width: 100%;
+height: 72px;
+
+background: #FFFFFF;
+
+/* Inside auto layout */
+border-bottom: solid 1px black;
+
+}
+
+
+#navbar-bottom-menu {
+  /* menu */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+align-items: center;
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+#navbar-bottom-menu a{
+
+/* title */
+font-family: 'Prompt';
+font-style: normal;
+font-weight: 600;
+font-size: 16px;
+line-height: 28px;
+/* identical to box height, or 175% */
+
+color: #000000;
+}
+
+
+#navbar-buttons{
+  /* buttons */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+align-items: center;
+padding: 0px;
+gap: 24px;
+
+width: 363px;
+height: 46px;
+
+
+
+
+}
