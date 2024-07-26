@@ -3,14 +3,12 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>index</title>
+    <title>kampanyalar</title>
     <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
-      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
-      crossorigin="anonymous"
+      href="node_modules/bootstrap/dist/css/bootstrap-grid.css"
     />
-    <link rel="stylesheet" href="assets/css/styles.css" />
+
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -18,59 +16,150 @@
       href="https://fonts.googleapis.com/css2?family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="assets/css/styles.css" />
   </head>
   <body>
-    <!-- Page Header Area-->
+    <div class="container">
+      <!-- Page Header Area-->
 
-    <div class="navbar">
-      <!-- top -->
-      <div class="navbar-top">
-        <div class="container-xl">
-          <div class="row">
-            <div id="navbar-top-menu" class="col-5 offset-7">
-              <a href="#">Bireysel</a>
+      <div class="navbar">
+        <!-- top -->
+        <div class="navbar-top">
+          <div class="container">
+            <div class="row">
+              <div id="navbar-top-menu" class="col-xl-5 offset-7">
+                <a href="#">Bireysel</a>
 
-              <a href="#">Kurumsal</a>
+                <a href="#">Kurumsal</a>
 
-              <a href="#">DestanNet'e Geçiş</a>
+                <a href="#">DestanNet'e Geçiş</a>
 
-              <a href="#">Fatura Öde</a>
+                <a href="#">Fatura Öde</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- bot -->
+        <div class="navbar-bottom">
+          <div class="container">
+            <div class="row">
+              <div id="logo" class="col-2">
+<a href="index.html"><img src="assets/images/Destan Net logo 1.svg" alt="logo" /></a>              
+</div>
+              <div id="navbar-bottom-menu" class="col-6">
+                <a href="index.html">Anasayfa</a>
+
+                <a href="kampanyalar.html">Kampanyalar</a>
+
+                <a href="#">Abone Ol</a>
+
+                <a href="#">Hız Testi</a>
+                <a href="#">Ödeme Noktaları</a>
+              </div>
+
+              <div id="navbar-buttons" class="col-4">
+                <img src="assets/images/buton1.svg" alt="" />
+                <img src="assets/images/buton2.svg" alt="" />
+              </div>
             </div>
           </div>
         </div>
       </div>
-      <!-- bot -->
-      <div class="navbar-bottom">
-        <div class="container-xl">
-          <div class="row">
-            <div id="logo" class="col-2">
-              <img src="assets/images/Destan Net logo 1.svg" alt="logo" />
-            </div>
-            <div id="navbar-bottom-menu" class="col-6">
-              <a href="#">Anasayfa</a>
 
-              <a href="#">Kampanyalar</a>
+      <!-- Page Content Area -->
 
-              <a href="#">Abone Ol</a>
+      <div class="main">
+        
+       
+          <!-- sabit-fiyat-kampanya -->
 
-              <a href="#">Hız Testi</a>
-              <a href="#">Ödeme Noktaları</a>
-            </div>
-
-            <div id="navbar-buttons" class="col-6">
-              <img src="assets/images/buton1.svg" alt="" />
-              <img src="assets/images/buton2.svg" alt="" />
+          <div class="container">
+             <div class="row">
+            <div id="slider" class="col-12">
+              
             </div>
           </div>
+            <div id="sabit-fiyat" class="row">
+              <div id="left-part" class="col-5 offset-1">
+                <h5>DestanNet Abonelerine Özel 12 Ay Sabit Fiyat Kampanyası</h5>
+                <p>
+                  12 aylık internet hizmet ücretinizi peşin ödeyerek bir yıl
+                  boyunca sabit fiyata internet kullanabilirsiniz. Ödemenizi
+                  nakit ya da Kredi kartı tek çekim şeklinde
+                  gerçekleştirebilirsiniz.
+                </p>
+                <div class="left-part-button">
+                  <a href=""
+                    ><img src="assets/images/buton-detaylıBilgi.svg" alt=""
+                  /></a>
+                </div>
+              </div>
+              <div id="right-part" class="col-6">
+                <img src="assets/images/Sabit Fiyatwithtext 2.png" alt="" />
+              </div>
+            </div>
+          </div>
+          <!-- index-4-kampanya -->
+           <div class="container">
+            <div id="kampanya-kartlari" class="row">
+                <div id="kampanya-kart" class="col-6">
+                    <img src="assets/images/portrait-family-looking-laptop-table 1.png" alt="">
+                    <div class="kampanya-text">
+                        <div class="kampanya-text-text">
+                        <h5>Taahhütsüz Işık Hızında  İnternet Kampanyası</h5>
+                        <p>DestanNet ile ayda 320₺’den başlayan fiyatlarla siz de ışık hızında, taahhütsüz ve kotasız fiber İnternetin keyfini sürün.</p>
+                        </div>
+                        <div class="kampanya-button">
+                            <img src="assets/images/buton-detay-index2.png" alt="">
+                        </div>
+                    </div>
+                </div>
+<div id="kampanya-kart" class="col-6">
+                    <img src="assets/images/gecis kampanyası 2.png" alt="">
+                    <div class="kampanya-text">
+                        <div class="kampanya-text-text">
+
+                        
+                        <h5>Farklı Operatörlerden Ücretsiz Geçiş Kampanyası</h5>
+                        <p>Farklı operatörlerden geçiş yapan müşterilemiz, herhangi bir kurulum ücreti ödemeden ve internetlerinde kesinti yaşamadan aynı tarife üzerinden internet kullanmaya devam edebilir.</p>
+                        </div>
+                        <div class="kampanya-button">
+                            <img src="assets/images/buton-detay-index2.png" alt="">
+                        </div>
+                    </div>
+            </div>
+            <div id="kampanya-kart" class="col-6">
+                    <img src="assets/images/1 ay ucretsiz internet kampanya 2.png" alt="">
+                    <div class="kampanya-text">
+                        <div class="kampanya-text-text">
+                        <h5>İlk Ay Ücretsiz DestanNet Fiber Kampanyası</h5>
+                        <p>Yeni DestanNet Fiber müşterilemize ve DestanNet Fiber’e geçiş yapan müşterilerimize ilk ay internet ücretsizdir.</p>
+                        </div>
+                        <div class="kampanya-button">
+                            <img src="assets/images/buton-detay-index2.png" alt="">
+                        </div>
+                    </div>
+           </div>
+           <div id="kampanya-kart" class="col-6">
+                    <img src="assets/images/gamer gigabit 2.png" alt="">
+                    <div class="kampanya-text">
+                        <div class="kampanya-text-text">
+                        <h5>Hız Tutkunları için Gigabit İnternet Kampanyası</h5>
+                        <p>Gigabit internet; profesyonel oyuncular, internet tutkunları ve teknoloji meraklıları için ideal bir seçenektir. 
+1000 Mbps indirme hızıyla istediğiniz film, dizi ve oyunları dakikalar içinde indirebilirsiniz.</p>
+</div>
+                        <div class="kampanya-button">
+                            <img src="assets/images/buton-detay-index2.png" alt="">
+                        </div>
+                    </div>
         </div>
       </div>
+      </div>
+
+      <!-- Page Footer Area -->
+
+      <footer id="footer" class="footer"></footer>
     </div>
-
-    <h1 style="color: black">Kampanyalar</h1>
-
-    <!-- Page Footer Area -->
-
-    <footer id="footer" class="footer"></footer>
 
     <!-- Scripts -->
     <script src="assets/js/app.js"></script>

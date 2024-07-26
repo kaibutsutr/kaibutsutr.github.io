@@ -321,7 +321,20 @@ border-bottom: solid 1px black;
 
 }
 
+#logo {
+  /* logo */
 
+width: 170px;
+height: 24px;
+padding: 12px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+}
 #navbar-bottom-menu {
   /* menu */
 
@@ -377,8 +390,7 @@ gap: 64px;
 padding: 32px 0px;
 }
 #slider {
-  margin-top: 150px;
-  margin-bottom:64px;
+  margin:64px 0 0 0;
   
 }
 
@@ -498,7 +510,7 @@ flex-direction: column;
 justify-content: space-between;
 align-items: center;
 padding: 0px;
-gap: 64px;
+
 
 
 
@@ -833,6 +845,52 @@ margin: 0 auto;
 
 
 /* Inside auto layout */
+
+
+}
+
+.bottom-cards-container {
+  margin:64px 0;
+}
+#populer-tarifeler {
+  /* populer tarifeler */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: center;
+padding: 0px;
+gap: 64px;
+
+}
+#populer-tarifeler-title h1 {
+  /* Popüler Tarifeler */
+
+
+
+
+font-family: 'Prompt';
+font-style: normal;
+font-weight: 400;
+font-size: 45px;
+line-height: 52px;
+/* or 116% */
+text-align: center;
+
+color: #000000;
+
+
+}
+#paketler {
+  /* Paketler */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+align-items: center;
+padding: 0px;
+gap: 24px;
 
 
 }
