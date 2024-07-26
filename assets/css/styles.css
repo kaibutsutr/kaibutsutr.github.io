@@ -374,6 +374,7 @@ justify-content: space-between;
 align-items: flex-start;
 margin: 64px 0px;
 gap: 64px;
+padding: 32px 0px;
 }
 #slider {
   margin-top: 150px;
@@ -386,6 +387,8 @@ gap: 64px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  width:1140px;
+
 }
 .card {
 /* Stats Card */
@@ -513,9 +516,8 @@ flex-grow: 0;
 /* Auto layout */
 display: flex;
 flex-direction: row;
-justify-content: flex-end;
 align-items: center;
-padding: 8px 76px 8px 70px;
+justify-content: baseline;
 gap: 24px;
 isolation: isolate;
 
@@ -524,11 +526,25 @@ background: #FFFFFF;
 box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 border-radius: 20px;
 
+/* Inside auto layout *//* picture */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 32px;
+gap: 10px;
+width:1140px;
+height: auto;
+
+
 /* Inside auto layout */
 flex: none;
-order: 0;
-align-self: stretch;
+order: 1;
 flex-grow: 0;
+z-index: 1;
+
+
 
 }
 #left-part {
@@ -536,8 +552,9 @@ flex-grow: 0;
 
 /* Auto layout */
 display: flex;
-flex-direction: column;
-align-items: flex-start;
+flex-direction: column-reverse;
+
+justify-content: space-between;
 padding: 10px;
 gap: 10px;
 isolation: isolate;
@@ -550,5 +567,272 @@ flex: none;
 order: 0;
 flex-grow: 0;
 z-index: 0;
+
+}
+.left-part-button {
+  /* butondetaylı bilgi */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 10px;
+isolation: isolate;
+
+
+
+
+/* Inside auto layout */
+
+
+}
+#left-part h5 {
+  /* DestanNet Abonelerine Özel 12 Ay Sabit Fiyat Kampanyası */
+
+
+/* blue title */
+font-family: 'Prompt';
+font-style: normal;
+font-weight: 400;
+font-size: 32px;
+line-height: 40px;
+/* or 125% */
+
+color: #2F2483;
+
+
+/* Inside auto layout */
+flex: none;
+order: 2;
+flex-grow: 0;
+z-index: 2;
+
+}
+#left-part p {
+  /* 12 aylık internet hizmet ücretinizi peşin ödeyerek bir yıl boyunca sabit fiyata internet kullanabilirsiniz. Ödemenizi nakit ya da Kredi kartı tek çekim şeklinde gerçekleştirebilirsiniz. */
+
+
+font-family: 'Prompt';
+font-style: normal;
+font-weight: 400;
+font-size: 24px;
+line-height: 32px;
+/* or 133% */
+
+color: #000000;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+z-index: 1;
+
+}
+#right-part {
+  /* picture */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: flex-start;
+padding: 0px;
+gap: 10px;
+
+width: 461px;
+height: 421.86px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+z-index: 1;
+
+}
+
+
+#kampanya-kartlari {
+  /* kampanya-kartları */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+align-items: flex-start;
+align-content: flex-start;
+padding: 0px;
+
+
+
+width: 1140px;
+height: 1524px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+gap:24px;
+
+}
+#kampanya-kart {
+ /* Kampanya kartı-1 */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: center;
+padding: 0px;
+
+
+width: 558px;
+height: 750px;
+
+background: #FFFFFF;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+border-radius: 20px;
+
+/* Inside auto layout */
+flex: none;
+order: 2;
+flex-grow: 0;
+
+
+
+}
+.kampanya-text {
+ /* Left part */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+justify-content: flex-end;
+align-items: center;
+padding: 10px;
+gap: 10px;
+
+margin: 0 auto;
+width: 554px;
+height: 377px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+
+}
+.kampanya-text-text {
+  /* text */
+
+/* Auto layout */
+/* text */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 10px;
+
+width: 475px;
+height: 288px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+}
+.kampanya-text-text h5 {
+/* İlk Ay Ücretsiz DestanNet Fiber Kampanyası */
+
+/* İlk Ay Ücretsiz DestanNet Fiber Kampanyası */
+
+
+
+/* blue title */
+/* Farklı operatörlerden geçiş yapan müşterilemiz, herhangi bir kurulum ücreti ödemeden ve internetlerinde kesinti yaşamadan aynı tarife üzerinden internet kullanmaya devam edebilir. */
+
+
+
+/* Taahhütsüz Işık Hızında İnternet Kampanyası */
+
+width: 480px;
+height: 88px;
+
+/* blue title */
+font-family: 'Prompt';
+font-style: normal;
+font-weight: 400;
+font-size: 32px;
+line-height: 40px;
+/* or 125% */
+
+color: #2F2483;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+
+/* Inside auto layout */
+
+
+}
+.kampanya-text-text p{
+  /* Yeni DestanNet Fiber müşterilemize ve DestanNet Fiber’e geçiş yapan müşterilerimize ilk ay internet ücretsizdir. */
+
+
+/* DestanNet ile ayda 320₺’den başlayan fiyatlarla siz de ışık hızında, taahhütsüz ve kotasız fiber İnternetin keyfini sürün. */
+
+width: 480px;
+height: 190px;
+
+font-family: 'Prompt';
+font-style: normal;
+font-weight: 400;
+font-size: 24px;
+line-height: 32px;
+/* or 133% */
+
+color: #000000;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+}
+.kampanya-button {
+  /* buton2 */
+
+box-sizing: border-box;
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 0px 62px;
+
+
+margin: 0 auto;
+
+
+/* Inside auto layout */
+
 
 }
