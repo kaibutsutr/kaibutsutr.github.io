@@ -892,8 +892,7 @@ flex-direction: row;
 justify-content: space-between;
 align-items: center;
 padding: 0px;
-gap: 24px;
-
+gap: 23 px;
 
 }
 #tarife-card {
@@ -945,6 +944,7 @@ flex: none;
 order: 0;
 align-self: stretch;
 flex-grow: 0;
+
 }
 
 .tarife-card-top p {
@@ -958,11 +958,11 @@ font-size: 31px;
 line-height: 90%;
 /* or 90% */
 display: flex;
+
 align-items: center;
 text-align: center;
-
+padding-top: 20px;
 color: #FFFFFF;
-
 
 /* Inside auto layout */
 flex: none;
@@ -973,6 +973,7 @@ flex-grow: 0;
 
 .tarife-card-bottom {
   /* Bottom */
+
 
 /* Auto layout */
 display: flex;
@@ -992,6 +993,9 @@ flex: none;
 order: 1;
 align-self: stretch;
 flex-grow: 1;
+
+
+/* Inside auto layout */
 
 }
 .bottom-icon img{
@@ -1022,7 +1026,8 @@ padding: 0px;
 gap: 8px;
 
 width: 324px;
-height: 212px;
+height: auto;
+margin: 0 auto;
 
 
 /* Inside auto layout */
@@ -1036,17 +1041,13 @@ flex-grow: 0;
 /* 24 Mbps 24 Mbps’ye kadar Download 10 Mbps’ye kadar Upload Taahhüt ve Kota yok */
 
 margin: 0 auto;
-width: 220px;
-height: 176px;
 
 font-family: 'Prompt';
 font-style: normal;
 font-weight: 700;
 font-size: 32px;
 line-height: 48px;
-display: flex;
-align-items: center;
-text-align: center;
+
 
 color: #1A1A1A;
 
@@ -1057,14 +1058,13 @@ order: 0;
 flex-grow: 0;
 
 }
+
 .tarife-card-bottom-text h2 {
 
 
 /* 320₺ */
 
 margin: 0 auto;
-width: 324px;
-height: 28px;
 
 font-family: 'Prompt';
 font-style: normal;
@@ -1072,9 +1072,7 @@ font-weight: 600;
 font-size: 32px;
 line-height: 28px;
 /* identical to box height, or 88% */
-display: flex;
-align-items: flex-end;
-text-align: center;
+
 
 color: #1A1A1A;
 
@@ -1083,6 +1081,41 @@ color: #1A1A1A;
 flex: none;
 order: 1;
 align-self: stretch;
+flex-grow: 0;
+
+}
+.tarife-card-bottom-text p {
+  margin: 0 auto;
+
+  font-family: "Prompt";
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+line-height: 28px;
+text-align: center;
+
+
+
+}
+.tarife-card-bottom-button {
+  /* buton2 */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 10px;
+isolation: isolate;
+
+width: 168px;
+height: 46px;
+margin: 0 auto;
+
+
+/* Inside auto layout */
+flex: none;
+order: 2;
 flex-grow: 0;
 
 }
