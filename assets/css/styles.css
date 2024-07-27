@@ -2,34 +2,35 @@
 
 /* CSS variables */
 :root {
-    --color-white: #ffffff;
-    --color-white-300: rgba(255, 255, 255, 0.3);
-    --color-white-800: rgba(255, 255, 255, 0.8);
-    --color-black: #1a1a1a;
-    --color-primary: #1a1a1a;
-    --color-secondary: #6C757D;
-    --color-blue: #2F2483;
-    --color-cyan: #009EE3;
-    --color-gradient1: radial-gradient(117.9% 165.88% at 100% 0%, #009EE3 0%, #2F2483 100%);
-    --color-brand: #57b3fe;
-    --color-highlight: #00a077;
-    --color-dark: #0d0d0d;
-    --color-orange-300: #ffe7db;
-    --color-orange-600: #fead86;
-    --color-green-300: #e7f2ef;
-    --color-green-400: #c0f2ef;
-    --color-green-500: #51a690;
-    --color-green-600: #00a198;
-    --color-yellow-300: #faf3d8;
-    --color-yellow-400: #ffcf00;
-    --color-purple-300: #ede7f2;
-    --color-purple-600: #75578e;
-    --color-blue-300: #d8f0fa;
-    --color-blue-600: #0985b9;
-    --font-prompt: "Prompt", sans-serif;
-    
-    
-    
+  --color-white: #ffffff;
+  --color-white-300: rgba(255, 255, 255, 0.3);
+  --color-white-800: rgba(255, 255, 255, 0.8);
+  --color-black: #1a1a1a;
+  --color-primary: #1a1a1a;
+  --color-secondary: #6c757d;
+  --color-blue: #2f2483;
+  --color-cyan: #009ee3;
+  --color-gradient1: radial-gradient(
+    117.9% 165.88% at 100% 0%,
+    #009ee3 0%,
+    #2f2483 100%
+  );
+  --color-brand: #57b3fe;
+  --color-highlight: #00a077;
+  --color-dark: #0d0d0d;
+  --color-orange-300: #ffe7db;
+  --color-orange-600: #fead86;
+  --color-green-300: #e7f2ef;
+  --color-green-400: #c0f2ef;
+  --color-green-500: #51a690;
+  --color-green-600: #00a198;
+  --color-yellow-300: #faf3d8;
+  --color-yellow-400: #ffcf00;
+  --color-purple-300: #ede7f2;
+  --color-purple-600: #75578e;
+  --color-blue-300: #d8f0fa;
+  --color-blue-600: #0985b9;
+  --font-prompt: "Prompt", sans-serif;
 }
 
 /**
@@ -38,7 +39,7 @@
    */
 
 html {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 /**
@@ -56,13 +57,12 @@ html {
 
 *::before,
 *::after {
-    box-sizing: border-box;
-    
+  box-sizing: border-box;
 }
 
 /* body has default margin */
 body {
-    margin: 0;
+  margin: 0;
 }
 
 /* h1-h6 has default margin top/bottom */
@@ -72,1113 +72,1141 @@ h3,
 h4,
 h5,
 h6 {
-    margin: 0 0 20px;
-    font-family: var(--font-prompt);
-    font-weight: 500;
-    color: var(--color-primary);
+  margin: 0 0 20px;
+  font-family: var(--font-prompt);
+  font-weight: 500;
+  color: var(--color-primary);
 }
 
 /* p tag has default margin top/bottom */
 p {
-    margin: 0 0 20px;
-    
-    
-    
-    
+  margin: 0 0 20px;
 }
 
 /* ul/ol has default maring,padding and list style like bullets */
 ul,
 ol {
-    margin: 0;
-    padding: 0;
-    list-style: none;
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
 
 /* anchor tag has default decoration underline */
 a {
-    text-decoration: none;
-    
+  text-decoration: none;
 }
 
 /* Responsive image property */
 img {
-    max-width: 100%;
-    height: auto;
+  max-width: 100%;
+  height: auto;
 }
 
 /* Font */
 .prompt-thin {
-    font-family: "Prompt", sans-serif;
-    font-weight: 100;
-    font-style: normal;
-  }
-  
-  .prompt-extralight {
-    font-family: "Prompt", sans-serif;
-    font-weight: 200;
-    font-style: normal;
-  }
-  
-  .prompt-light {
-    font-family: "Prompt", sans-serif;
-    font-weight: 300;
-    font-style: normal;
-  }
-  
-  .prompt-regular {
-    font-family: "Prompt", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-  }
-  
-  .prompt-medium {
-    font-family: "Prompt", sans-serif;
-    font-weight: 500;
-    font-style: normal;
-  }
-  
-  .prompt-semibold {
-    font-family: "Prompt", sans-serif;
-    font-weight: 600;
-    font-style: normal;
-  }
-  
-  .prompt-bold {
-    font-family: "Prompt", sans-serif;
-    font-weight: 700;
-    font-style: normal;
-  }
-  
-  .prompt-extrabold {
-    font-family: "Prompt", sans-serif;
-    font-weight: 800;
-    font-style: normal;
-  }
-  
-  .prompt-black {
-    font-family: "Prompt", sans-serif;
-    font-weight: 900;
-    font-style: normal;
-  }
-  
-  .prompt-thin-italic {
-    font-family: "Prompt", sans-serif;
-    font-weight: 100;
-    font-style: italic;
-  }
-  
-  .prompt-extralight-italic {
-    font-family: "Prompt", sans-serif;
-    font-weight: 200;
-    font-style: italic;
-  }
-  
-  .prompt-light-italic {
-    font-family: "Prompt", sans-serif;
-    font-weight: 300;
-    font-style: italic;
-  }
-  
-  .prompt-regular-italic {
-    font-family: "Prompt", sans-serif;
-    font-weight: 400;
-    font-style: italic;
-  }
-  
-  .prompt-medium-italic {
-    font-family: "Prompt", sans-serif;
-    font-weight: 500;
-    font-style: italic;
-  }
-  
-  .prompt-semibold-italic {
-    font-family: "Prompt", sans-serif;
-    font-weight: 600;
-    font-style: italic;
-  }
-  
-  .prompt-bold-italic {
-    font-family: "Prompt", sans-serif;
-    font-weight: 700;
-    font-style: italic;
-  }
-  
-  .prompt-extrabold-italic {
-    font-family: "Prompt", sans-serif;
-    font-weight: 800;
-    font-style: italic;
-  }
-  
-  .prompt-black-italic {
-    font-family: "Prompt", sans-serif;
-    font-weight: 900;
-    font-style: italic;
-  }
-  
+  font-family: "Prompt", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+}
+
+.prompt-extralight {
+  font-family: "Prompt", sans-serif;
+  font-weight: 200;
+  font-style: normal;
+}
+
+.prompt-light {
+  font-family: "Prompt", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.prompt-regular {
+  font-family: "Prompt", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.prompt-medium {
+  font-family: "Prompt", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.prompt-semibold {
+  font-family: "Prompt", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.prompt-bold {
+  font-family: "Prompt", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.prompt-extrabold {
+  font-family: "Prompt", sans-serif;
+  font-weight: 800;
+  font-style: normal;
+}
+
+.prompt-black {
+  font-family: "Prompt", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+.prompt-thin-italic {
+  font-family: "Prompt", sans-serif;
+  font-weight: 100;
+  font-style: italic;
+}
+
+.prompt-extralight-italic {
+  font-family: "Prompt", sans-serif;
+  font-weight: 200;
+  font-style: italic;
+}
+
+.prompt-light-italic {
+  font-family: "Prompt", sans-serif;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.prompt-regular-italic {
+  font-family: "Prompt", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.prompt-medium-italic {
+  font-family: "Prompt", sans-serif;
+  font-weight: 500;
+  font-style: italic;
+}
+
+.prompt-semibold-italic {
+  font-family: "Prompt", sans-serif;
+  font-weight: 600;
+  font-style: italic;
+}
+
+.prompt-bold-italic {
+  font-family: "Prompt", sans-serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+.prompt-extrabold-italic {
+  font-family: "Prompt", sans-serif;
+  font-weight: 800;
+  font-style: italic;
+}
+
+.prompt-black-italic {
+  font-family: "Prompt", sans-serif;
+  font-weight: 900;
+  font-style: italic;
+}
+
 /* 
   Page wrapper styles:
   This style will not let any elements to overflow from the page wrapper 
   */
 
-  #page-wrapper {
-    position: relative;
-    overflow: hidden;
+#page-wrapper {
+  position: relative;
+  overflow: hidden;
 }
 
 /* Typography */
 body {
-    font-family: var(--font-prompt);
-    font-size: 16px;
-    line-height: 24px;
-    font-weight: 300;
-    color: var(--color-primary);
+  font-family: var(--font-prompt);
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 300;
+  color: var(--color-primary);
 }
 
 /* Generic container styles */
-
-
+.page-container {
+  position: relative;
+  min-height: 100vh;
+}
 
 /* Navbar */
-.navbar{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 109px;
+.navbar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 109px;
 
-/* Auto layout */
+  /* Auto layout */
 
-padding: 0px;
-
-
-
-
-
+  padding: 0px;
 }
 
 /* Navbar-Top */
-.navbar-top{
+.navbar-top {
+  width: 100%;
+  height: 37px;
 
-width: 100%;
-height: 37px;
-
-background: linear-gradient(89.95deg, #2F2483 -16.03%, #009EE3 110.22%);
-
-/
+  background: linear-gradient(89.95deg, #2f2483 -16.03%, #009ee3 110.22%);
 }
-
 
 #navbar-top-menu {
-
-/* Auto layout */
-padding: 5px;
-display: flex;
-flex-direction: row;
-justify-content: space-between;
-
-
-
-
-
-
-
+  /* Auto layout */
+  padding: 5px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
 }
-#navbar-top-menu a{
+#navbar-top-menu a {
   color: var(--color-white);
   font-family: "Prompt", sans-serif;
   font-weight: 300;
   font-style: normal;
-  
 }
 
 /* Bireysel */
 
-
 /* Navbar-bottom */
 .navbar-bottom {
-    
-/* Navbar-bottom */
+  /* Navbar-bottom */
 
-/* Auto layout */
-/* Navbar-bottom */
+  /* Auto layout */
+  /* Navbar-bottom */
 
-/* Auto layout */
-display: flex;
-flex-direction: row;
-align-items: center;
-padding: 13px 151px;
-gap: 24px;
+  /* Auto layout */
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 13px 151px;
+  gap: 24px;
 
-margin: 0 auto;
-width: 100%;
-height: 72px;
+  margin: 0 auto;
+  width: 100%;
+  height: 72px;
 
-background: #FFFFFF;
+  background: #ffffff;
 
-/* Inside auto layout */
-border-bottom: solid 1px black;
-
+  /* Inside auto layout */
+  border-bottom: solid 1px black;
 }
 
 #logo {
   /* logo */
 
-width: 170px;
-height: 24px;
-padding: 12px;
+  width: 170px;
+  height: 24px;
+  padding: 12px;
 
-
-/* Inside auto layout */
-flex: none;
-order: 0;
-flex-grow: 0;
-
+  /* Inside auto layout */
+  flex: none;
+  order: 0;
+  flex-grow: 0;
 }
 #navbar-bottom-menu {
   /* menu */
 
-/* Auto layout */
-display: flex;
-flex-direction: row;
-justify-content: space-between;
-align-items: center;
-
+  /* Auto layout */
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
 }
-#navbar-bottom-menu a{
+#navbar-bottom-menu a {
+  /* title */
+  font-family: "Prompt";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 28px;
+  /* identical to box height, or 175% */
 
-/* title */
-font-family: 'Prompt';
-font-style: normal;
-font-weight: 600;
-font-size: 16px;
-line-height: 28px;
-/* identical to box height, or 175% */
-
-color: #000000;
+  color: #000000;
 }
 
-
-#navbar-buttons{
+#navbar-buttons {
   /* buttons */
 
-/* Auto layout */
-display: flex;
-flex-direction: row;
-justify-content:flex-end;
-align-items: center;
-padding: 0px;
-gap: 24px;
+  /* Auto layout */
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0px;
+  gap: 24px;
 
-width: 363px;
-height: 46px;
-
-
-
-
+  height: 46px;
+  margin-top: 10px;
 }
-.main{
+.main {
   /* body */
 
-/* Auto layout */
-display: flex;
-flex-direction: column;
-justify-content: space-between;
-align-items: flex-start;
-margin: 64px 0px;
-gap: 64px;
-padding: 32px 0px;
+  /* Auto layout */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin: 64px 0px;
+  gap: 64px;
+  padding: 32px 0px;
 }
 #slider {
-  margin:64px 0 0 0;
-  
+  margin: 64px 0 0 0;
 }
-
 
 #homepage-cards {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  width:1140px;
-
+  width: 1140px;
 }
 .card {
-/* Stats Card */
+  /* Stats Card */
 
-box-sizing: border-box;
+  box-sizing: border-box;
 
-/* Auto layout */
-display: flex;
-flex-direction: column;
-justify-content: space-between;
-align-items: center;
-padding: 24px;
-gap: 24px;
+  /* Auto layout */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 24px;
+  gap: 24px;
 
-width: 267px;
-min-width: 240px;
-height: 224px;
+  width: 267px;
+  min-width: 240px;
+  height: 224px;
 
-background: #FFFFFF;
-border: 1px solid #D9D9D9;
-border-radius: 8px;
+  background: #ffffff;
+  border: 1px solid #d9d9d9;
+  border-radius: 8px;
 
-/* Inside auto layout */
-
-
+  /* Inside auto layout */
 }
-.card-text{
+.card-text {
   /* Review Body */
 
-/* Auto layout */
-display: flex;
-flex-direction: column;
-justify-content: space-between;
-align-items: center;
-padding: 0px;
-gap: 4px;
+  /* Auto layout */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px;
+  gap: 4px;
 
-
-
-/* Inside auto layout */
-
-
+  /* Inside auto layout */
 }
 .card-text-title {
   /* Text Heading */
 
+  font-family: "Prompt";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 28px;
+  /* identical to box height, or 175% */
+  text-align: center;
 
-
-font-family: 'Prompt';
-font-style: normal;
-font-weight: 600;
-font-size: 16px;
-line-height: 28px;
-/* identical to box height, or 175% */
-text-align: center;
-
-color: #1E1E1E;
-
-
-
-
+  color: #1e1e1e;
 }
 .card-text-text {
   /* Çağrı Merkezi ve WhatsApp hattımıza 7 gün 24 saat ulaşabilirsiniz. */
 
+  /* prompt regular */
+  font-family: "Prompt";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
 
-
-/* prompt regular */
-font-family: 'Prompt';
-font-style: normal;
-font-weight: 400;
-font-size: 16px;
-line-height: 24px;
-
-color: #1E1E1E;
-
-
-
-
+  color: #1e1e1e;
 }
-.card-icon{
+.card-icon {
+  /* Auto layout */
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1px 4px;
+  gap: 10px;
 
-/* Auto layout */
-display: flex;
-flex-direction: row;
-justify-content: space-between;
-align-items: center;
-padding: 1px 4px;
-gap: 10px;
+  margin: 0 auto;
+  width: 40px;
+  height: 40px;
 
-margin: 0 auto;
-width: 40px;
-height: 40px;
-
-
-/* Inside auto layout */
-
-
+  /* Inside auto layout */
 }
 .index-kampanyalar {
   /* index kampanyalar */
 
-/* Auto layout */
-display: flex;
-flex-direction: column;
-justify-content: space-between;
-align-items: center;
-padding: 0px;
+  /* Auto layout */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px;
 
-
-
-
-
-/* Inside auto layout */
-flex: none;
-order: 2;
-align-self: stretch;
-flex-grow: 0;
-
+  /* Inside auto layout */
+  flex: none;
+  order: 2;
+  align-self: stretch;
+  flex-grow: 0;
 }
 #sabit-fiyat {
   /* Sabit-Fiyat */
 
-/* Auto layout */
-display: flex;
-flex-direction: row;
-align-items: center;
-justify-content: baseline;
-gap: 24px;
-isolation: isolate;
+  /* Auto layout */
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: baseline;
+  gap: 24px;
+  isolation: isolate;
 
+  background: #ffffff;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 20px;
 
-background: #FFFFFF;
-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-border-radius: 20px;
+  /* Inside auto layout */ /* picture */
 
-/* Inside auto layout *//* picture */
+  /* Auto layout */
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 32px;
+  gap: 10px;
+  width: 1140px;
+  height: auto;
 
-/* Auto layout */
-display: flex;
-flex-direction: row;
-align-items: center;
-padding: 32px;
-gap: 10px;
-width:1140px;
-height: auto;
-
-
-/* Inside auto layout */
-flex: none;
-order: 1;
-flex-grow: 0;
-z-index: 1;
-
-
-
+  /* Inside auto layout */
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+  z-index: 1;
 }
 #left-part {
   /* Left part */
 
-/* Auto layout */
-display: flex;
-flex-direction: column-reverse;
+  /* Auto layout */
+  display: flex;
+  flex-direction: column-reverse;
 
-justify-content: space-between;
-padding: 10px;
-gap: 10px;
-isolation: isolate;
+  justify-content: space-between;
+  padding: 10px;
+  gap: 10px;
+  isolation: isolate;
 
-
-
-
-/* Inside auto layout */
-flex: none;
-order: 0;
-flex-grow: 0;
-z-index: 0;
-
+  /* Inside auto layout */
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  z-index: 0;
 }
 .left-part-button {
   /* butondetaylı bilgi */
 
-/* Auto layout */
-display: flex;
-flex-direction: column;
-align-items: flex-start;
-padding: 0px;
-gap: 10px;
-isolation: isolate;
+  /* Auto layout */
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 10px;
+  isolation: isolate;
 
-
-
-
-/* Inside auto layout */
-
-
+  /* Inside auto layout */
 }
 #left-part h5 {
   /* DestanNet Abonelerine Özel 12 Ay Sabit Fiyat Kampanyası */
 
+  /* blue title */
+  font-family: "Prompt";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 40px;
+  /* or 125% */
 
-/* blue title */
-font-family: 'Prompt';
-font-style: normal;
-font-weight: 400;
-font-size: 32px;
-line-height: 40px;
-/* or 125% */
+  color: #2f2483;
 
-color: #2F2483;
-
-
-/* Inside auto layout */
-flex: none;
-order: 2;
-flex-grow: 0;
-z-index: 2;
-
+  /* Inside auto layout */
+  flex: none;
+  order: 2;
+  flex-grow: 0;
+  z-index: 2;
 }
 #left-part p {
   /* 12 aylık internet hizmet ücretinizi peşin ödeyerek bir yıl boyunca sabit fiyata internet kullanabilirsiniz. Ödemenizi nakit ya da Kredi kartı tek çekim şeklinde gerçekleştirebilirsiniz. */
 
+  font-family: "Prompt";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 32px;
+  /* or 133% */
 
-font-family: 'Prompt';
-font-style: normal;
-font-weight: 400;
-font-size: 24px;
-line-height: 32px;
-/* or 133% */
+  color: #000000;
 
-color: #000000;
-
-
-/* Inside auto layout */
-flex: none;
-order: 1;
-flex-grow: 0;
-z-index: 1;
-
+  /* Inside auto layout */
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+  z-index: 1;
 }
 #right-part {
   /* picture */
 
-/* Auto layout */
-display: flex;
-flex-direction: row;
-align-items: flex-start;
-padding: 0px;
-gap: 10px;
+  /* Auto layout */
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 10px;
 
-width: 461px;
-height: 421.86px;
+  width: 461px;
+  height: 421.86px;
 
-
-/* Inside auto layout */
-flex: none;
-order: 1;
-flex-grow: 0;
-z-index: 1;
-
+  /* Inside auto layout */
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+  z-index: 1;
 }
-
 
 #kampanya-kartlari {
   /* kampanya-kartları */
 
-/* Auto layout */
-display: flex;
-flex-direction: row;
-flex-wrap: wrap;
-align-items: flex-start;
-align-content: flex-start;
-padding: 0px;
+  /* Auto layout */
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  align-content: flex-start;
+  padding: 0px;
 
+  width: 1140px;
+  height: 1524px;
 
-
-width: 1140px;
-height: 1524px;
-
-
-/* Inside auto layout */
-flex: none;
-order: 1;
-align-self: stretch;
-flex-grow: 0;
-gap:24px;
-
+  /* Inside auto layout */
+  flex: none;
+  order: 1;
+  align-self: stretch;
+  flex-grow: 0;
+  gap: 24px;
 }
 #kampanya-kart {
- /* Kampanya kartı-1 */
+  /* Kampanya kartı-1 */
 
-/* Auto layout */
-display: flex;
-flex-direction: column;
-align-items: center;
-padding: 0px;
+  /* Auto layout */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0px;
 
+  width: 558px;
+  height: 750px;
 
-width: 558px;
-height: 750px;
+  background: #ffffff;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 20px;
 
-background: #FFFFFF;
-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-border-radius: 20px;
-
-/* Inside auto layout */
-flex: none;
-order: 2;
-flex-grow: 0;
-
-
-
+  /* Inside auto layout */
+  flex: none;
+  order: 2;
+  flex-grow: 0;
 }
 .kampanya-text {
- /* Left part */
+  /* Left part */
 
-/* Auto layout */
-display: flex;
-flex-direction: column;
-justify-content: flex-end;
-align-items: center;
-padding: 10px;
-gap: 10px;
+  /* Auto layout */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 10px;
+  gap: 10px;
 
-margin: 0 auto;
-width: 554px;
-height: 377px;
+  margin: 0 auto;
+  width: 554px;
+  height: 377px;
 
-
-/* Inside auto layout */
-flex: none;
-order: 1;
-flex-grow: 0;
-
-
-
+  /* Inside auto layout */
+  flex: none;
+  order: 1;
+  flex-grow: 0;
 }
 .kampanya-text-text {
   /* text */
 
-/* Auto layout */
-/* text */
+  /* Auto layout */
+  /* text */
 
-/* Auto layout */
-display: flex;
-flex-direction: column;
-align-items: flex-start;
-padding: 0px;
-gap: 10px;
+  /* Auto layout */
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 10px;
 
-width: 475px;
-height: 288px;
+  width: 475px;
+  height: 288px;
 
-
-/* Inside auto layout */
-flex: none;
-order: 0;
-flex-grow: 0;
-
-
+  /* Inside auto layout */
+  flex: none;
+  order: 0;
+  flex-grow: 0;
 }
 .kampanya-text-text h5 {
-/* İlk Ay Ücretsiz DestanNet Fiber Kampanyası */
+  /* İlk Ay Ücretsiz DestanNet Fiber Kampanyası */
 
-/* İlk Ay Ücretsiz DestanNet Fiber Kampanyası */
+  /* İlk Ay Ücretsiz DestanNet Fiber Kampanyası */
 
+  /* blue title */
+  /* Farklı operatörlerden geçiş yapan müşterilemiz, herhangi bir kurulum ücreti ödemeden ve internetlerinde kesinti yaşamadan aynı tarife üzerinden internet kullanmaya devam edebilir. */
 
+  /* Taahhütsüz Işık Hızında İnternet Kampanyası */
 
-/* blue title */
-/* Farklı operatörlerden geçiş yapan müşterilemiz, herhangi bir kurulum ücreti ödemeden ve internetlerinde kesinti yaşamadan aynı tarife üzerinden internet kullanmaya devam edebilir. */
+  width: 480px;
+  height: 88px;
 
+  /* blue title */
+  font-family: "Prompt";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 40px;
+  /* or 125% */
 
+  color: #2f2483;
 
-/* Taahhütsüz Işık Hızında İnternet Kampanyası */
+  /* Inside auto layout */
+  flex: none;
+  order: 0;
+  flex-grow: 0;
 
-width: 480px;
-height: 88px;
-
-/* blue title */
-font-family: 'Prompt';
-font-style: normal;
-font-weight: 400;
-font-size: 32px;
-line-height: 40px;
-/* or 125% */
-
-color: #2F2483;
-
-
-/* Inside auto layout */
-flex: none;
-order: 0;
-flex-grow: 0;
-
-
-
-/* Inside auto layout */
-
-
+  /* Inside auto layout */
 }
-.kampanya-text-text p{
+.kampanya-text-text p {
   /* Yeni DestanNet Fiber müşterilemize ve DestanNet Fiber’e geçiş yapan müşterilerimize ilk ay internet ücretsizdir. */
 
+  /* DestanNet ile ayda 320₺’den başlayan fiyatlarla siz de ışık hızında, taahhütsüz ve kotasız fiber İnternetin keyfini sürün. */
 
-/* DestanNet ile ayda 320₺’den başlayan fiyatlarla siz de ışık hızında, taahhütsüz ve kotasız fiber İnternetin keyfini sürün. */
+  width: 480px;
+  height: 190px;
 
-width: 480px;
-height: 190px;
+  font-family: "Prompt";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 32px;
+  /* or 133% */
 
-font-family: 'Prompt';
-font-style: normal;
-font-weight: 400;
-font-size: 24px;
-line-height: 32px;
-/* or 133% */
+  color: #000000;
 
-color: #000000;
-
-
-/* Inside auto layout */
-flex: none;
-order: 1;
-flex-grow: 0;
-
-
+  /* Inside auto layout */
+  flex: none;
+  order: 1;
+  flex-grow: 0;
 }
 .kampanya-button {
   /* buton2 */
 
-box-sizing: border-box;
+  box-sizing: border-box;
 
-/* Auto layout */
-display: flex;
-flex-direction: row;
-justify-content: center;
-align-items: center;
-padding: 0px 62px;
+  /* Auto layout */
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 0px 62px;
 
+  margin: 0 auto;
 
-margin: 0 auto;
-
-
-/* Inside auto layout */
-
-
+  /* Inside auto layout */
 }
 
 .bottom-cards-container {
-  margin:64px 0;
+  margin: 64px 0;
 }
 
 /* populer tarifeler */
 
 #populer-tarifeler {
-  
-
-/* Auto layout */
-display: flex;
-flex-direction: column;
-align-items: center;
-padding: 0px;
-gap: 64px;
-
+  /* Auto layout */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0px;
+  gap: 64px;
 }
 #populer-tarifeler-title h1 {
   /* Popüler Tarifeler */
 
+  font-family: "Prompt";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 45px;
+  line-height: 52px;
+  /* or 116% */
+  text-align: center;
 
-
-
-font-family: 'Prompt';
-font-style: normal;
-font-weight: 400;
-font-size: 45px;
-line-height: 52px;
-/* or 116% */
-text-align: center;
-
-color: #000000;
-
-
+  color: #000000;
 }
 #paketler {
   /* Paketler */
 
-/* Auto layout */
-display: flex;
-flex-direction: row;
-justify-content: space-between;
-align-items: center;
-padding: 0px;
-gap: 23 px;
-
+  /* Auto layout */
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px;
+  gap: 23 px;
 }
 #tarife-card {
   /* Tarife-card */
 
-/* Auto layout */
-display: flex;
-flex-direction: column;
-justify-content: space-between;
-align-items: center;
-padding: 0px;
-gap: 10px;
+  /* Auto layout */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px;
+  gap: 10px;
 
-width: 364px;
-height: 509px;
+  width: 364px;
+  height: 509px;
 
-background: #FFFFFF;
-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-border-radius: 20px 20px 0px 0px;
+  background: #ffffff;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 20px 20px 0px 0px;
 
-/* Inside auto layout */
-flex: none;
-order: 0;
-flex-grow: 0;
-
+  /* Inside auto layout */
+  flex: none;
+  order: 0;
+  flex-grow: 0;
 }
 
-.tarife-card-top  {
- /* Top */
+.tarife-card-top {
+  /* Top */
 
+  /* Auto layout */
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 
-/* Auto layout */
-display: flex;
-flex-direction: row;
-justify-content: center;
-align-items: center;
+  margin: 0 auto;
+  width: 364px;
+  height: 59px;
 
+  /* kaanefekt */
+  background: radial-gradient(
+    117.9% 165.88% at 100% 0%,
+    #009ee3 0%,
+    #2f2483 100%
+  );
+  border-radius: 20px 20px 0px 0px;
 
-margin:  0 auto;
-width: 364px;
-height: 59px;
-
-/* kaanefekt */
-background: radial-gradient(117.9% 165.88% at 100% 0%, #009EE3 0%, #2F2483 100%);
-border-radius: 20px 20px 0px 0px;
-
-/* Inside auto layout */
-flex: none;
-order: 0;
-align-self: stretch;
-flex-grow: 0;
-
+  /* Inside auto layout */
+  flex: none;
+  order: 0;
+  align-self: stretch;
+  flex-grow: 0;
 }
 
 .tarife-card-top p {
   /* 24 Mbps Fiber */
 
+  font-family: "Prompt";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 31px;
+  line-height: 90%;
+  /* or 90% */
+  display: flex;
 
-font-family: 'Prompt';
-font-style: normal;
-font-weight: 600;
-font-size: 31px;
-line-height: 90%;
-/* or 90% */
-display: flex;
+  align-items: center;
+  text-align: center;
+  padding-top: 20px;
+  color: #ffffff;
 
-align-items: center;
-text-align: center;
-padding-top: 20px;
-color: #FFFFFF;
-
-/* Inside auto layout */
-flex: none;
-order: 0;
-flex-grow: 0;
-
+  /* Inside auto layout */
+  flex: none;
+  order: 0;
+  flex-grow: 0;
 }
 
 .tarife-card-bottom {
   /* Bottom */
 
+  /* Auto layout */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 12px 20px;
+  gap: 16px;
 
-/* Auto layout */
-display: flex;
-flex-direction: column;
-justify-content: center;
-align-items: center;
-padding: 12px 20px;
-gap: 16px;
+  margin: 0 auto;
+  width: 364px;
+  height: 450px;
 
-margin: 0 auto;
-width: 364px;
-height: 450px;
+  /* Inside auto layout */
+  flex: none;
+  order: 1;
+  align-self: stretch;
+  flex-grow: 1;
 
-
-/* Inside auto layout */
-flex: none;
-order: 1;
-align-self: stretch;
-flex-grow: 1;
-
-
-/* Inside auto layout */
-
+  /* Inside auto layout */
 }
-.bottom-icon img{
+.bottom-icon img {
   /* bottom-icon */
 
-width: 324px;
-height: 136px;
+  width: 324px;
+  height: 136px;
 
-border-radius: 0px;
+  border-radius: 0px;
 
-/* Inside auto layout */
-flex: none;
-order: 0;
-align-self: stretch;
-flex-grow: 1;
-
+  /* Inside auto layout */
+  flex: none;
+  order: 0;
+  align-self: stretch;
+  flex-grow: 1;
 }
 
-.tarife-card-bottom-text{
+.tarife-card-bottom-text {
   /* Text-container */
 
-/* Auto layout */
-display: flex;
-flex-direction: column;
-justify-content: space-between;
-align-items: center;
-padding: 0px;
-gap: 8px;
+  /* Auto layout */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px;
+  gap: 8px;
 
-width: 324px;
-height: auto;
-margin: 0 auto;
+  width: 324px;
+  height: auto;
+  margin: 0 auto;
 
-
-/* Inside auto layout */
-flex: none;
-order: 1;
-align-self: stretch;
-flex-grow: 0;
-
+  /* Inside auto layout */
+  flex: none;
+  order: 1;
+  align-self: stretch;
+  flex-grow: 0;
 }
 .tarife-card-bottom-text h1 {
-/* 24 Mbps 24 Mbps’ye kadar Download 10 Mbps’ye kadar Upload Taahhüt ve Kota yok */
+  /* 24 Mbps 24 Mbps’ye kadar Download 10 Mbps’ye kadar Upload Taahhüt ve Kota yok */
 
-margin: 0 auto;
+  margin: 0 auto;
 
-font-family: 'Prompt';
-font-style: normal;
-font-weight: 700;
-font-size: 32px;
-line-height: 48px;
+  font-family: "Prompt";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 48px;
 
+  color: #1a1a1a;
 
-color: #1A1A1A;
-
-
-/* Inside auto layout */
-flex: none;
-order: 0;
-flex-grow: 0;
-
+  /* Inside auto layout */
+  flex: none;
+  order: 0;
+  flex-grow: 0;
 }
 
 .tarife-card-bottom-text h2 {
+  /* 320₺ */
 
+  margin: 0 auto;
 
-/* 320₺ */
+  font-family: "Prompt";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 28px;
+  /* identical to box height, or 88% */
 
-margin: 0 auto;
+  color: #1a1a1a;
 
-font-family: 'Prompt';
-font-style: normal;
-font-weight: 600;
-font-size: 32px;
-line-height: 28px;
-/* identical to box height, or 88% */
-
-
-color: #1A1A1A;
-
-
-/* Inside auto layout */
-flex: none;
-order: 1;
-align-self: stretch;
-flex-grow: 0;
-
+  /* Inside auto layout */
+  flex: none;
+  order: 1;
+  align-self: stretch;
+  flex-grow: 0;
 }
 .tarife-card-bottom-text p {
   margin: 0 auto;
 
   font-family: "Prompt";
-    font-weight: 400;
-    font-style: normal;
-    font-size: 16px;
-line-height: 28px;
-text-align: center;
-
-
-
+  font-weight: 400;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 28px;
+  text-align: center;
 }
 .tarife-card-bottom-button {
   /* buton2 */
 
-/* Auto layout */
-display: flex;
-flex-direction: column;
-align-items: flex-start;
-padding: 0px;
-gap: 10px;
-isolation: isolate;
+  /* Auto layout */
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 10px;
+  isolation: isolate;
 
-width: 168px;
-height: 46px;
-margin: 0 auto;
+  width: 168px;
+  height: 46px;
+  margin: 0 auto;
 
-
-/* Inside auto layout */
-flex: none;
-order: 2;
-flex-grow: 0;
-
+  /* Inside auto layout */
+  flex: none;
+  order: 2;
+  flex-grow: 0;
 }
 .call-us {
   /* Call us */
 
-box-sizing: border-box;
+  box-sizing: border-box;
 
-/* Auto layout */
-display: flex;
-flex-direction: column;
-align-items: center;
-padding: 0px;
+  /* Auto layout */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0px;
 
-position: relative;
-width: 1140px;
-height: 206px;
+  position: relative;
+  width: 1140px;
+  height: 206px;
 
-
-background: #0F1A3B;
-border: 1px solid #D5D5D5;
-box-shadow: 0px 4px 5px 6px rgba(98, 98, 98, 0.12);
-border-radius: 50px;
-
+  box-shadow: 0px 4px 5px 6px rgba(98, 98, 98, 0.12);
+  border-radius: 50px;
 }
 .call-us-top {
   /* Frame */
 
-width: 1140px;
-height: 23px;
+  width: 1140px;
+  height: 23px;
 
-background: linear-gradient(90deg, #009EE3 0%, #FFFFFF 100%);
+  background: linear-gradient(90deg, #009ee3 0%, #ffffff 100%);
+  border-top-left-radius: 50px;
+  border-top-right-radius: 50px;
 
-/* Inside auto layout */
-flex: none;
-order: 0;
-align-self: stretch;
-flex-grow: 1;
-
+  /* Inside auto layout */
+  flex: none;
+  order: 0;
+  align-self: stretch;
+  flex-grow: 1;
 }
 
 .call-us-bottom {
-/* Frame 14 */
+  /* Frame 14 */
 
-/* Auto layout */
-display: flex;
-flex-direction: column;
-justify-content: space-between;
-align-items: center;
-padding: 41px 80px;
-gap: 2px;
+  /* Auto layout */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px 40px;
 
-width: 1140px;
-height: 183px;
+  width: 1140px;
+  height: 183px;
 
-background: #2F2483;
+  background: #2f2483;
 
-/* Inside auto layout */
-flex: none;
-order: 1;
-flex-grow: 0;
-
+  /* Inside auto layout */
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
 }
 .bottom-content {
-  
+  /* contents */
+
+  /* Auto layout */
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0px;
+  gap: 41px;
+
+  margin: 0 auto;
+  width: 1071.35px;
+  height: 101px;
+
+  border-radius: 20px;
+
+  /* Inside auto layout */
+  flex: none;
+  order: 0;
+  flex-grow: 1;
+}
+/* textbox */
+.bottom-content-textbox {
+  /* Auto layout */
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 0px;
+  gap: 10px;
+
+  width: 648px;
+  height: 101px;
+
+  /* Inside auto layout */
+  flex: none;
+  order: 0;
+  align-self: stretch;
+  flex-grow: 1;
+}
+.bottom-content-textbox p {
+  /* Size en uygun tarife ve kampanyaları öğrenmek için Çağrı Merkezimizi arayın ya da WhatsApp üzerinden canlı destek alın */
+
+  width: 648px;
+  height: 186px;
+
+  font-family: "Prompt";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 40px;
+  /* or 143% */
+  display: flex;
+  align-items: center;
+
+  color: #ffffff;
+
+  /* Inside auto layout */
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+.bottom-content-whatsapp {
+  /* logos:whatsapp-icon */
+
+  width: 83.35px;
+  height: 84px;
+
+  /* Inside auto layout */
+  flex: none;
+  order: 2;
+  flex-grow: 0;
+}
+
+/* Footer  */
+
+.footer {
+  margin-bottom: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 617px;
+
+  /* kaanefekt */
+  background: radial-gradient(
+    117.9% 165.88% at 100% 0%,
+    #009ee3 0%,
+    #2f2483 100%
+  );
+}
+.footer-header {
+  /* Footer-Header */
+
+  width: 100%;
+  height: 40px;
+  text-align: center;
+  padding: 8px;
+}
+#footer-menu {
+  /* vertical-menu */
+
+  /* Auto layout */
+
+  padding: 0px;
+  margin: 40px 0;
+}
+#footer-menu h1 {
+  /* Hizmetler Altyapı Sorgulama Hız Testi Fatura Ödeme Abonelik Başvurusu Tarife Bilgileri Taahhüt Hatırlatma IP Sorgulama */
+
+  font-family: "Prompt";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 33px;
+
+  color: #ffffff;
+
+  /* Inside auto layout */
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+#footer-menu li,
+a {
+  font-family: "Prompt";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 33px;
+  margin: 8px 0;
+
+  color: #ffffff;
+}
+#footer-social-icons {
+  /* Social Media */
+
+  /* Auto layout */
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 24px;
+
+  width: 170px;
+  height: 24px;
+  left: 1120px;
+  top: 336px;
+}
+#footer-bottom {
+  /* trademark */
+
+  /* trademark */
+
+  height: 10px;
+  margin-top: 70px;
+  padding: 0;
+}
+#footer-bottom h1 {
+  /* © Destannet 2024 */
+
+  font-family: "Prompt";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+
+  color: #ffffff;
+}
+#footer-bottom p {
+  /* Made by Aziz Durmuş */
+
+  font-family: "Prompt";
+  font-style: italic;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 26px;
+  /* identical to box height */
+
+  color: rgba(255, 255, 255, 0.7);
 }
