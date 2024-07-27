@@ -482,7 +482,6 @@ color: #1E1E1E;
 
 }
 .card-icon{
-  /* Clock */
 
 /* Auto layout */
 display: flex;
@@ -852,8 +851,11 @@ margin: 0 auto;
 .bottom-cards-container {
   margin:64px 0;
 }
+
+/* populer tarifeler */
+
 #populer-tarifeler {
-  /* populer tarifeler */
+  
 
 /* Auto layout */
 display: flex;
@@ -892,5 +894,195 @@ align-items: center;
 padding: 0px;
 gap: 24px;
 
+
+}
+#tarife-card {
+  /* Tarife-card */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+align-items: center;
+padding: 0px;
+gap: 10px;
+
+width: 364px;
+height: 509px;
+
+background: #FFFFFF;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+border-radius: 20px 20px 0px 0px;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+}
+
+.tarife-card-top  {
+ /* Top */
+
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+
+
+margin:  0 auto;
+width: 364px;
+height: 59px;
+
+/* kaanefekt */
+background: radial-gradient(117.9% 165.88% at 100% 0%, #009EE3 0%, #2F2483 100%);
+border-radius: 20px 20px 0px 0px;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+}
+
+.tarife-card-top p {
+  /* 24 Mbps Fiber */
+
+
+font-family: 'Prompt';
+font-style: normal;
+font-weight: 600;
+font-size: 31px;
+line-height: 90%;
+/* or 90% */
+display: flex;
+align-items: center;
+text-align: center;
+
+color: #FFFFFF;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+}
+
+.tarife-card-bottom {
+  /* Bottom */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+padding: 12px 20px;
+gap: 16px;
+
+margin: 0 auto;
+width: 364px;
+height: 450px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 1;
+
+}
+.bottom-icon img{
+  /* bottom-icon */
+
+width: 324px;
+height: 136px;
+
+border-radius: 0px;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 1;
+
+}
+
+.tarife-card-bottom-text{
+  /* Text-container */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+align-items: center;
+padding: 0px;
+gap: 8px;
+
+width: 324px;
+height: 212px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+
+}
+.tarife-card-bottom-text h1 {
+/* 24 Mbps 24 Mbps’ye kadar Download 10 Mbps’ye kadar Upload Taahhüt ve Kota yok */
+
+margin: 0 auto;
+width: 220px;
+height: 176px;
+
+font-family: 'Prompt';
+font-style: normal;
+font-weight: 700;
+font-size: 32px;
+line-height: 48px;
+display: flex;
+align-items: center;
+text-align: center;
+
+color: #1A1A1A;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+}
+.tarife-card-bottom-text h2 {
+
+
+/* 320₺ */
+
+margin: 0 auto;
+width: 324px;
+height: 28px;
+
+font-family: 'Prompt';
+font-style: normal;
+font-weight: 600;
+font-size: 32px;
+line-height: 28px;
+/* identical to box height, or 88% */
+display: flex;
+align-items: flex-end;
+text-align: center;
+
+color: #1A1A1A;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
 
 }
