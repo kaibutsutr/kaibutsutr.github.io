@@ -1634,3 +1634,11 @@ li {
   order: 2;
   flex-grow: 0;
 }
+.hiz-testi-text-content a {
+  color: #1a1a1a;
+  font-family: "Prompt";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 32px;
+}
