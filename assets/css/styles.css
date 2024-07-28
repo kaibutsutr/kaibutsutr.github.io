@@ -982,6 +982,7 @@ body {
   flex-direction: column;
   align-items: center;
   padding: 0px;
+  margin: 32px 0;
 
   position: relative;
 
@@ -1212,16 +1213,20 @@ a {
 
 /* AboneOl.html */
 
-#abone-title {
-  /* Auto layout */
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  padding: 0px;
-  gap: 10px;
+#blue-title {
+  /* trademark */
 
-  height: 64px;
-  margin-top: 64px;
+  /* Auto layout */
+
+  /* or 125% */
+  display: flex;
+  align-items: center;
+  text-align: center;
+
+  margin: 64px auto;
+
+  width: 1140px;
+  height: 56px;
 
   /* kaanefekt */
   background: radial-gradient(
@@ -1230,34 +1235,36 @@ a {
     #2f2483 100%
   );
   border-radius: 20px;
-  align-items: center;
-  text-align: center;
+
   /* Inside auto layout */
   flex: none;
   order: 0;
+  align-self: stretch;
   flex-grow: 0;
+
+  /* Abonelik Başvurusu */
 }
 
 /* Abonelik Başvurusu */
-#abone-title h1 {
-  height: 64px;
-
+#blue-title h1 {
+  /* Hız Testi */
   font-family: "Prompt";
   font-style: normal;
   font-weight: 400;
-  font-size: 45px;
-  line-height: 52px;
-  /* or 116% */
-  display: flex;
-  align-items: center;
-  text-align: center;
+  font-size: 32px;
+  line-height: 40px;
+
+  width: 1140px;
+  height: 56px;
+  padding: 16px 0;
+
+  /* blue title */
+
+  /* Inside auto layout */
 
   color: #ffffff;
 
   /* Inside auto layout */
-  flex: none;
-  order: 0;
-  flex-grow: 0;
 }
 
 /* Abonelik links */
@@ -1561,7 +1568,7 @@ a {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 20px;
   padding: 0 32px;
-  height: 400px;
+  height: 350px;
 }
 .hiz-testi-title {
   display: flex;
@@ -1639,6 +1646,257 @@ li {
   font-family: "Prompt";
   font-style: normal;
   font-weight: 300;
+  font-size: 24px;
+  line-height: 32px;
+}
+.odeme-bottom {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px;
+
+  height: 274px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+
+  /* Inside auto layout */
+}
+
+.odeme-bottom-textbox {
+  /* contents */
+
+  /* Auto layout */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0px;
+
+  width: 942px;
+  height: 124px;
+
+  border-radius: 20px;
+
+  /* Inside auto layout */
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+
+  /* Ödemelerinizi Online İşlem Merkezimizden yapabilir veya Denizbank, Garanti Bankası, Ziraat Bankası, İş Bankası ve Yapı Kredi Bankasından Otomatik Ödeme Talimatı verebilirsiniz. */
+}
+.odeme-bottom-textbox p {
+  font-family: "Prompt";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 40px;
+  /* or 143% */
+  display: flex;
+  align-items: center;
+  text-align: center;
+
+  color: #000000;
+  padding: 16px;
+  margin-top: 16px;
+
+  /* Inside auto layout */
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+#fastpay {
+  /* mid part */
+
+  height: 360px;
+
+  background: #ffffff;
+  border-radius: 20px;
+  margin: 64px 0;
+  /* Inside auto layout */
+  flex: none;
+  order: 2;
+  flex-grow: 0;
+
+  /* Denizbank FastPay */
+
+  /* blue title */
+}
+#fastpay-text h1 {
+  color: #2f2483;
+  font-family: "Prompt";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 40px;
+  /* or 125% */
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+#fastpay-text p {
+  /* Denizbank hesabınızla akıllı telefonunuzdan fastPay uygulaması ile anında ödeme yapabilirsiniz */
+
+  font-family: "Prompt";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 32px;
+  /* or 133% */
+
+  color: #000000;
+}
+
+.odeme-bottom {
+  /* bottom */
+
+  /* Auto layout */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px;
+
+  font-family: "Prompt";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 24px;
+
+  /* Inside auto layout */
+  flex: none;
+  order: 3;
+  flex-grow: 0;
+}
+.odeme-bottom h1 {
+  /* Banka havalesi ile ödeme yapan müşterilerimizin dikkatine */
+
+  /* blue title */
+  font-family: "Prompt";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 40px;
+  /* or 125% */
+  display: flex;
+  align-items: center;
+  text-align: center;
+
+  color: #2f2483;
+
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+  /* Inside auto layout */
+  flex: none;
+  order: 0;
+  align-self: stretch;
+  flex-grow: 0;
+}
+
+/* Havale açıklamasına */
+
+/* body para */
+
+#odeme-dikkat ul {
+  list-style: initial;
+  margin: initial;
+  padding: 24px 10px;
+}
+#odeme-dikkat ol {
+  list-style: initial;
+  margin: initial;
+  padding: 24px 10px;
+}
+#odeme-dikkat li {
+  list-style: initial;
+  margin: initial;
+  padding: 24px 10px;
+}
+
+.odeme {
+  /* Call us */
+
+  box-sizing: border-box;
+
+  /* Auto layout */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0px;
+  box-shadow: 0px 4px 5px 6px rgba(98, 98, 98, 0.12);
+  border-radius: 25px;
+}
+.odeme-top {
+  /* Frame */
+
+  height: 23px;
+
+  background: linear-gradient(90deg, #009ee3 0%, #ffffff 100%);
+  border-top-left-radius: 50px;
+  border-top-right-radius: 50px;
+
+  /* Inside auto layout */
+  flex: none;
+  order: 0;
+  align-self: stretch;
+  flex-grow: 1;
+}
+
+/* textbox */
+.odeme-bottom-textbox {
+  /* contents */
+
+  /* Auto layout */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0px;
+
+  height: 150px;
+
+  /* Inside auto layout */
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+#odeme-dikkat h1 {
+  /* Banka havalesi ile ödeme yapan müşterilerimizin dikkatine */
+
+  width: 1140px;
+  height: 85px;
+
+  /* blue title */
+  font-family: "Prompt";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 40px;
+  /* or 125% */
+  display: flex;
+  align-items: center;
+  text-align: center;
+
+  color: #2f2483;
+
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+  /* Inside auto layout */
+  flex: none;
+  order: 0;
+  align-self: stretch;
+  flex-grow: 0;
+}
+#odeme-dikkat a {
+  color: #009ee3;
+  font-family: "Prompt";
+  font-style: normal;
+  font-weight: 400;
   font-size: 24px;
   line-height: 32px;
 }
