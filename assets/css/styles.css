@@ -259,11 +259,14 @@ body {
 
 #navbar-top-menu {
   /* Auto layout */
-  padding: 5px;
+  height: 37px;
+
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  padding: 0px;
+  margin: auto 0;
 }
 #navbar-top-menu a {
   color: var(--color-white);
@@ -351,7 +354,7 @@ body {
   /* Auto layout */
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: flex-start;
   margin: 64px 0px;
   gap: 64px;
@@ -365,7 +368,6 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  width: 1140px;
 }
 .card {
   /* Stats Card */
@@ -482,7 +484,7 @@ body {
   align-items: center;
   padding: 32px;
   gap: 10px;
-  width: 1140px;
+
   height: auto;
 
   /* Inside auto layout */
@@ -590,7 +592,6 @@ body {
   align-content: flex-start;
   padding: 0px;
 
-  width: 1140px;
   height: 1524px;
 
   /* Inside auto layout */
@@ -983,7 +984,7 @@ body {
   padding: 0px;
 
   position: relative;
-  width: 1140px;
+
   height: 206px;
 
   box-shadow: 0px 4px 5px 6px rgba(98, 98, 98, 0.12);
@@ -992,7 +993,6 @@ body {
 .call-us-top {
   /* Frame */
 
-  width: 1140px;
   height: 23px;
 
   background: linear-gradient(90deg, #009ee3 0%, #ffffff 100%);
@@ -1016,7 +1016,6 @@ body {
   align-items: center;
   padding: 40px 40px;
 
-  width: 1140px;
   height: 183px;
 
   background: #2f2483;
@@ -1039,7 +1038,7 @@ body {
   gap: 41px;
 
   margin: 0 auto;
-  width: 1071.35px;
+
   height: 101px;
 
   border-radius: 20px;
@@ -1184,7 +1183,7 @@ a {
   /* trademark */
 
   height: 10px;
-  margin-top: 70px;
+  margin-top: 78px;
   padding: 0;
 }
 #footer-bottom h1 {
@@ -1209,4 +1208,346 @@ a {
   /* identical to box height */
 
   color: rgba(255, 255, 255, 0.7);
+}
+
+/* AboneOl.html */
+
+#abone-title {
+  /* Auto layout */
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 10px;
+
+  height: 64px;
+  margin-top: 64px;
+
+  /* kaanefekt */
+  background: radial-gradient(
+    117.9% 165.88% at 100% 0%,
+    #009ee3 0%,
+    #2f2483 100%
+  );
+  border-radius: 20px;
+  align-items: center;
+  text-align: center;
+  /* Inside auto layout */
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+/* Abonelik Başvurusu */
+#abone-title h1 {
+  height: 64px;
+
+  font-family: "Prompt";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 45px;
+  line-height: 52px;
+  /* or 116% */
+  display: flex;
+  align-items: center;
+  text-align: center;
+
+  color: #ffffff;
+
+  /* Inside auto layout */
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+/* Abonelik links */
+.abonelik {
+  /* Call us */
+
+  box-sizing: border-box;
+
+  /* Auto layout */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0px;
+
+  position: relative;
+
+  box-shadow: 0px 4px 5px 6px rgba(98, 98, 98, 0.12);
+  border-radius: 50px;
+}
+.abonelik-top {
+  /* Frame */
+
+  height: 23px;
+
+  background: linear-gradient(90deg, #009ee3 0%, #ffffff 100%);
+  border-top-left-radius: 50px;
+  border-top-right-radius: 50px;
+
+  /* Inside auto layout */
+  flex: none;
+  order: 0;
+  align-self: stretch;
+  flex-grow: 1;
+}
+
+.abonelik-bottom {
+  /* Frame 14 */
+
+  /* Call us */
+
+  /* content */
+
+  /* Auto layout */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px;
+  gap: 8px;
+  height: 307px;
+  background: #2f2483;
+
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+
+  /* Inside auto layout */
+  flex: none;
+  order: 1;
+  align-self: stretch;
+  flex-grow: 0;
+}
+
+/* textbox */
+.abonelik-bottom-textbox {
+  /* contents */
+
+  /* Auto layout */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0px;
+
+  height: 150px;
+
+  /* Inside auto layout */
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+.abonelik-bottom-textbox p {
+  /* Abone olmak için ister Çağrı Merkezimizi arayın, ister WhatsApp üzerinden mesaj bırakın, isterseniz de şubemizden abone olun. */
+
+  font-family: "Prompt";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 40px;
+  /* or 143% */
+  display: flex;
+  align-items: center;
+  text-align: center;
+
+  color: #ffffff;
+
+  /* Inside auto layout */
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+.abonelik-bottom-buttons {
+  /* Bottom */
+
+  /* Auto layout */
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 23px 33px;
+  gap: 28px;
+
+  margin: 0 auto;
+  width: 786px;
+  height: 134px;
+
+  /* Inside auto layout */
+  flex: none;
+  order: 1;
+  align-self: stretch;
+  flex-grow: 1;
+}
+.iznik-left {
+  /* top */
+
+  /* Auto layout */
+
+  padding: 0px;
+
+  margin: 0 auto;
+
+  height: 459px;
+
+  /* Inside auto layout */
+}
+.iznik-left-title h1 {
+  /* DestanNet İznik Şubesi */
+
+  height: 71.13px;
+
+  /* blue title */
+  font-family: "Prompt";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 40px;
+  /* or 125% */
+  padding-left: 16px;
+
+  color: #2f2483;
+
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+  /* Inside auto layout */
+  flex: none;
+  order: 0;
+  align-self: stretch;
+  flex-grow: 0;
+}
+
+.iznik-left-text {
+  /* Beyler Mah. Meriç Sok. No:10/A İznik/BURSA 0850 303 3973 (Müşteri Hattı) 0224 334 1156 (Genel Müdürlük) 0532 723 2799 (WhatsApp Hattı) */
+
+  width: 431px;
+  height: 321px;
+
+  /* body para */
+  font-family: "Prompt";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 32px;
+  /* or 133% */
+  padding-left: 16px;
+  color: #000000;
+
+  /* Inside auto layout */
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+}
+.iznik-left-text img {
+  font-size: 32px;
+  vertical-align: middle;
+}
+.iznik-left-text span {
+  padding-bottom: 0;
+}
+.iznik-left-button {
+  /* buton2 */
+
+  margin: 0;
+
+  height: 46px;
+
+  /* Inside auto layout */
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+
+  /* Inside auto layout */
+}
+.google-maps-button {
+  /* buton2 */
+
+  /* mavi buton1 */
+  /* mavi buton1 */
+
+  box-sizing: border-box;
+
+  width: 170px;
+  height: 46px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  background: #2f2483;
+  border: 0.2px solid #ffffff;
+  box-shadow: -2px 4px 4px rgba(0, 0, 0, 0.2);
+  border-radius: 7px;
+  text-align: center;
+
+  /* Google Maps */
+}
+.google-maps-button-text p {
+  width: 103px;
+  height: 16px;
+
+  font-family: "Prompt";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 32px;
+  /* identical to box height, or 100% */
+  text-align: center;
+  align-items: center;
+
+  color: #ffffff;
+}
+.iznik-right {
+  height: 459px;
+}
+#abone-title2 {
+  /* Auto layout */
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 10px;
+
+  height: 64px;
+  margin: 64px 0;
+
+  background: white;
+  border-radius: 20px;
+  align-items: center;
+  text-align: center;
+  /* Inside auto layout */
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+/* Abonelik Başvurusu */
+#abone-title2 h2 {
+  height: 64px;
+
+  font-family: "Prompt";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 45px;
+  line-height: 52px;
+  /* or 116% */
+  display: flex;
+  align-items: center;
+  text-align: center;
+
+  color: #009ee3;
+
+  /* Inside auto layout */
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+.abone-content {
+  background: #ffffff;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 20px;
+  padding: 32px;
+}
+#iznik {
+  margin: 64px 0;
 }
