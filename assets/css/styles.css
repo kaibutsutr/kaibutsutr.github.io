@@ -1551,3 +1551,86 @@ a {
 #iznik {
   margin: 64px 0;
 }
+
+.hiz-testi-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: space-between;
+  background: #ffffff;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 20px;
+  padding: 0 32px;
+  height: 400px;
+}
+.hiz-testi-title {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  align-items: center;
+}
+.hiz-testi-title h1 {
+  /* Hız Testi Nasıl Kullanılır? */
+
+  /* blue title */
+  font-family: "Prompt";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 40px;
+  /* or 125% */
+  text-align: center;
+
+  color: #2f2483;
+
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.hiz-testi-text-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-content: space-between;
+}
+.hiz-testi-text-content h2 {
+  /* blue title */
+  font-family: "Prompt";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 40px;
+  /* or 125% */
+  display: flex;
+  align-items: center;
+  text-align: center;
+  margin: 32px;
+
+  color: #000000;
+}
+.hiz-testi-text-content p,
+li {
+  /* Güvenilir hız testi sonuçları almak için aşağıdaki adımları izleyebilirsiniz: Arka Planda Çalışan Uygulamaları Kapatın Kablolu Bağlantı Kullanın (Mümkünse) Yakın Sunucuları Seçin Ping Değerlerini Gözlemleyin Sonuçları Karşılaştırın */
+
+  font-family: "Prompt";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 32px;
+  /* or 133% */
+
+  color: #000000;
+}
+
+#speedtest {
+  /* speedtest first 1 */
+
+  width: 942px;
+  height: 594px;
+
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  border-radius: 20px;
+
+  /* Inside auto layout */
+  flex: none;
+  order: 2;
+  flex-grow: 0;
+}
