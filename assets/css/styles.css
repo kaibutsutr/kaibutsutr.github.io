@@ -769,7 +769,7 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: 0px;
-  gap: 23 px;
+  gap: 23px;
 }
 #tarife-card {
   /* Tarife-card */
@@ -781,7 +781,7 @@ body {
   align-items: center;
   padding: 0px;
   gap: 10px;
-
+  margin: 32px 0;
   width: 364px;
   height: 509px;
 
@@ -1901,7 +1901,26 @@ li {
   font-size: 24px;
   line-height: 32px;
 }
+#paketler2 {
+  /* Paketler */
 
+  /* Auto layout */
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 24px;
+  margin: 32px 0;
+
+  width: 1140px;
+  height: 509px;
+
+  /* Inside auto layout */
+  flex: none;
+  order: 0;
+  align-self: stretch;
+  flex-grow: 0;
+}
 #tarife-card2 {
   /* Tarife-card */
 
@@ -1936,7 +1955,7 @@ li {
 
   width: 267px;
   height: 59px;
-  padding: 10px 55px;
+  padding: 16px 0px;
 
   /* kaanefekt */
   background: radial-gradient(
@@ -1944,23 +1963,18 @@ li {
     #009ee3 0%,
     #2f2483 100%
   );
-
+  text-align: center;
   /* Inside auto layout */
 }
 .tarife-card-top2 p {
   /* Başlangıç Paketi */
-  display: flex;
-  align-items: center;
+
   text-align: center;
-  width: 200px;
-  height: 35px;
-
-  top: 12px;
-
+  align-items: center;
   font-family: "Prompt";
   font-style: normal;
   font-weight: 600;
-  font-size: 23.04px;
+  font-size: 24px;
   line-height: 28px;
   /* or 122% */
 
@@ -1986,22 +2000,74 @@ li {
   order: 1;
   flex-grow: 0;
 }
-#paketler2 {
-  /* Paketler */
+
+.tarife-card-bottom-text2 {
+  /* Text-container */
 
   /* Auto layout */
   display: flex;
-  flex-direction: row;
-  align-items: flex-start;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
   padding: 0px;
-  gap: 24px;
+  gap: 8px;
 
-  width: 1140px;
-  height: 509px;
+  width: 230px;
+
+  margin: 0 auto;
+
+  /* Inside auto layout */
+  flex: none;
+  order: 1;
+  align-self: stretch;
+  flex-grow: 0;
+}
+.tarife-card-bottom-text2 h1 {
+  /* 24 Mbps 24 Mbps’ye kadar Download 10 Mbps’ye kadar Upload Taahhüt ve Kota yok */
+
+  margin: 0 auto;
+
+  font-family: "Prompt";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 48px;
+
+  color: #1a1a1a;
 
   /* Inside auto layout */
   flex: none;
   order: 0;
+  flex-grow: 0;
+}
+
+.tarife-card-bottom-text2 h2 {
+  /* 320₺ */
+
+  margin: 0 auto;
+
+  font-family: "Prompt";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 28px;
+  /* identical to box height, or 88% */
+
+  color: #1a1a1a;
+
+  /* Inside auto layout */
+  flex: none;
+  order: 1;
   align-self: stretch;
   flex-grow: 0;
+}
+.tarife-card-bottom-text2 p {
+  margin: 0 auto;
+
+  font-family: "Prompt";
+  font-weight: 400;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 28px;
+  text-align: center;
 }
