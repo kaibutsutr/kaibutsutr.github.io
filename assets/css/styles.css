@@ -352,16 +352,17 @@ body {
   /* body */
 
   /* Auto layout */
+
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   align-items: flex-start;
-  margin: 64px 0px;
+  margin: 141px 0px;
   gap: 64px;
   padding: 32px 0px;
 }
 #slider {
-  margin: 64px 0 0 0;
+  margin: 0;
 }
 
 #homepage-cards {
@@ -1223,7 +1224,7 @@ a {
   align-items: center;
   text-align: center;
 
-  margin: 64px auto;
+  margin: auto;
 
   width: 1140px;
   height: 56px;
@@ -1899,4 +1900,108 @@ li {
   font-weight: 400;
   font-size: 24px;
   line-height: 32px;
+}
+
+#tarife-card2 {
+  /* Tarife-card */
+
+  /* Auto layout */
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+
+  width: 267px;
+  height: 509px;
+
+  background: #ffffff;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 20px;
+
+  /* Inside auto layout */
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+.tarife-card-top2 {
+  /* Top */
+
+  /* Auto layout */
+
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+
+  /* Top */
+
+  width: 267px;
+  height: 59px;
+  padding: 10px 55px;
+
+  /* kaanefekt */
+  background: radial-gradient(
+    117.9% 165.88% at 100% 0%,
+    #009ee3 0%,
+    #2f2483 100%
+  );
+
+  /* Inside auto layout */
+}
+.tarife-card-top2 p {
+  /* Başlangıç Paketi */
+  display: flex;
+  align-items: center;
+  text-align: center;
+  width: 200px;
+  height: 35px;
+
+  top: 12px;
+
+  font-family: "Prompt";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 23.04px;
+  line-height: 28px;
+  /* or 122% */
+
+  color: #ffffff;
+}
+
+.tarife-card-bottom2 {
+  /* Bottom */
+
+  /* Auto layout */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 12px 20px;
+  gap: 16px;
+
+  width: 267px;
+  height: 450px;
+
+  /* Inside auto layout */
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+}
+#paketler2 {
+  /* Paketler */
+
+  /* Auto layout */
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 24px;
+
+  width: 1140px;
+  height: 509px;
+
+  /* Inside auto layout */
+  flex: none;
+  order: 0;
+  align-self: stretch;
+  flex-grow: 0;
 }
