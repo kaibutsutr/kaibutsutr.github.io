@@ -2071,11 +2071,26 @@ li {
   line-height: 28px;
   text-align: center;
 }
-.accordion-header h2 {
-  font-family: "Prompt";
-  font-weight: 400;
-  font-style: normal;
-  font-size: 16px;
-  line-height: 28px;
+
+.accordion-title {
+  /* Sıkça Sorulan Sorular */
+
+  width: 331px;
+  height: 57px;
   text-align: center;
+
+  /* paragraph text */
+  font-family: "Prompt";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 32px;
+  line-height: 120%;
+  /* or 38px */
+
+  color: #000000;
+
+  /* Inside auto layout */
+  flex: none;
+  order: 0;
+  flex-grow: 0;
 }
