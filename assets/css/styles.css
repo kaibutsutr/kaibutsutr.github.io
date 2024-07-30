@@ -2099,3 +2099,196 @@ li {
   text-align: center;
   align-items: center;
 }
+
+/* Plan Detail Card */
+.plan-detail-card {
+  /* Plan Detail Card */
+
+  /* Auto layout */
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+
+  width: 1140px;
+  height: 527px;
+
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  border-radius: 20px;
+
+  /* Inside auto layout */
+  flex: none;
+  order: 0;
+  align-self: stretch;
+  flex-grow: 0;
+}
+/* Top */
+.plan-detail-card-top {
+  /* Auto layout */
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 12px 64px;
+  gap: 10px;
+
+  width: 1140px;
+  height: 59px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  background: linear-gradient(89.89deg, #2f2483 -19.28%, #009ee3 108.3%);
+
+  /* Inside auto layout */
+  flex: none;
+  order: 0;
+  align-self: stretch;
+  flex-grow: 1;
+
+  /* Destannet Ekonomik Fiber Paketi */
+
+  font-family: "Prompt";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 28px;
+  /* or 88% */
+
+  color: #ffffff;
+
+  /* Inside auto layout */
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+/* Bottom */
+.plan-detail-card-bottom {
+  /* Auto layout */
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 0px;
+
+  width: 1140px;
+  height: 464px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+
+  background: #ffffff;
+
+  /* Inside auto layout */
+  flex: none;
+  order: 1;
+  align-self: stretch;
+  flex-grow: 0;
+}
+.plan-detail-card-bottom-leftside {
+  /* Bottom */
+
+  /* Auto layout */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px;
+  gap: 16px;
+
+  width: 267px;
+  height: 505px;
+
+  /* Inside auto layout */
+  flex: none;
+  order: 0;
+  align-self: stretch;
+  flex-grow: 0;
+}
+
+/* Text-container */
+
+.plan-detail-card-bottom-leftside-textbox h5 {
+  font-family: "Prompt";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 33px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+
+  color: #000000;
+}
+.plan-detail-card-bottom-leftside-textbox h4 {
+  /* 320₺ */
+
+  width: 80px;
+  height: 28px;
+  left: calc(50% - 80px / 2 + 0.28px);
+  top: 188px;
+
+  font-family: "Prompt";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 28px;
+  /* identical to box height, or 88% */
+  display: flex;
+  align-items: flex-end;
+  text-align: center;
+
+  color: #000000;
+}
+.plan-detail-card-bottom-leftside-textbox {
+  /* Ekonomik Paket 24 Mbps’ye kadar Download 10 Mbps’ye kadar Upload Taahhüt ve Kota yok */
+
+  font-family: "Prompt";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+
+  color: #000000;
+}
+.plan-detail-card-bottom-leftside-button {
+  text-align: center;
+}
+
+/* bottom-rightside */
+.plan-detail-card-bottom-rightside {
+  /* bottom-rightside */
+
+  /* Auto layout */
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 16px;
+
+  width: 870px;
+  height: 464px;
+
+  background: #ffffff;
+  border-radius: 0px;
+
+  /* Inside auto layout */
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+
+  /* Yüksek İndirme Hızı: 24 Mbps hızında, dosyaları, filmleri, oyunları ve hızlı bir şekilde indirebilirsiniz. Akıcı Yayın: Netflix, Hulu, YouTube gibi yayın hizmetleri, HD veya hatta 4K içerikleri kesintisiz olarak izlemek yeterli bant genişliği gerektirir. 24 Mbps bağlantı ile birden fazla cihazda aynı anda HD video izleyebilirsiniz. Düşük Ping: Sorunsuz online oyun deneyimi için, düşük gecikme süresi (ping) ve istikrarlı bir internet bağlantısı gerektirir. 24 Mbps fiber bağlantı, single player ve multiplayer oyunlar için iyi bir deneyim sağlar. Çoklu Cihazlar: Birden fazla kullanıcı ve cihazın olduğu evlerde (akıllı telefonlar, tabletler, akıllı TV'ler, bilgisayarlar) 24 Mbps fiber bağlantı, internet hızında belirgin bir yavaşlama olmadan aynı anda birden fazla cihazın bağlanmasına olanak tanır. Video Görüşmeleri: Zoom, Skype, WhatsApp gibi video görüşme uygulamaları, sorunsuz bir şekilde video ve ses iletimi için yeterli bant genişliği gerektirir. 24 Mbps download ve 10 Mbps upload ile, kesintisiz ve gecikmesiz yüksek kaliteli video görüşmeleri yapabilirsiniz. */
+
+  font-family: "Prompt";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+
+  color: #000000;
+
+  /* Inside auto layout */
+  flex: none;
+  order: 0;
+  align-self: stretch;
+  flex-grow: 0;
+}
