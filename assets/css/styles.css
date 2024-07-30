@@ -2094,3 +2094,8 @@ li {
   order: 0;
   flex-grow: 0;
 }
+.navbar-brand a {
+  display: flex;
+  text-align: center;
+  align-items: center;
+}
