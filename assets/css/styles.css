@@ -2292,3 +2292,165 @@ li {
   align-self: stretch;
   flex-grow: 0;
 }
+
+.sabitfiyat-text {
+  /* right part */
+
+  /* Auto layout */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  gap: 10px;
+
+  height: 744px;
+  top: 64px;
+
+  background: #ffffff;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.sabitfiyat-text-title {
+  /* top */
+
+  /* Inside auto layout */
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+
+  /* DestanNet Abonelerine Özel 12 Ay Sabit Fiyat Kampanyası */
+
+  width: 480px;
+  height: 84.84px;
+  top: 10px;
+
+  /* blue title */
+  font-family: "Prompt";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 40px;
+  /* or 125% */
+
+  color: #2f2483;
+
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.sabitfiyat-text-details {
+  width: 480px;
+  height: 452.17px;
+  bottom: 134px;
+
+  /* body para */
+  font-family: "Prompt";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 32px;
+  /* or 133% */
+
+  color: #000000;
+
+  /* AboneOl */
+}
+.sabitfiyat-text-button {
+  /* AboneOl */
+
+  /* Auto layout */
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 10px;
+  isolation: isolate;
+
+  margin: 0 auto;
+  width: 170px;
+  height: 46px;
+
+  /* Inside auto layout */
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+}
+.sabitfiyat-text-details li {
+  list-style: initial;
+  margin: initial;
+  padding: 0px 8px;
+}
+#akordiyon li {
+  list-style: initial;
+  margin: initial;
+  padding: 0px 8px;
+}
+#akordiyon p {
+  /* Fiyatlara KDV ve ÖİV dahildir. 12 ay sabit fiyat fırsatından yararlanan müşteriler, ilgili sürenin bitimine kadar farklı bir kampanyadan yararlanamaz. 12 ay sonunda müşteri güncel tarife üzerinden faturalandırılır. Bu kampanya 31.10.2024 tarihine kadar geçerlidir. Statik IP, modem, teknik servis ücreti gibi ücretler bu kampanyaya dahil değildir. Nakil (Adres değişikliği) 500₺ ’dir. Hat dondurma ücreti 170₺ ’dir. Yalın VDSL ve Yalın Fiber kampanyasında 500₺ Eve Kadar Kurulum ve aktivasyon ücreti alınmaktadır.  */
+
+  font-family: "Prompt";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+  /* or 175% */
+
+  color: #000000;
+}
+
+.taahhutsuz-text {
+  /* right part */
+
+  /* Auto layout */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 32px;
+  gap: 10px;
+
+  height: 600px;
+  top: 64px;
+
+  background: #ffffff;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.taahhutsuz-text-details {
+  height: 452.17px;
+  bottom: 134px;
+
+  /* body para */
+  font-family: "Prompt";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 32px;
+  /* or 133% */
+
+  color: #000000;
+
+  /* AboneOl */
+
+  /* Auto layout */
+}
+.taahhutsuz-text-details li,
+ul {
+  list-style: initial;
+  margin: initial;
+  padding: 0px 8px;
+}
+
+.taahhutsuz-text-button {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 10px;
+  isolation: isolate;
+  margin: 0 auto;
+
+  /* Inside auto layout */
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+}
