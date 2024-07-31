@@ -2323,8 +2323,6 @@ li {
 
   /* DestanNet Abonelerine Özel 12 Ay Sabit Fiyat Kampanyası */
 
-  width: 480px;
-  height: 84.84px;
   top: 10px;
 
   /* blue title */
@@ -2408,7 +2406,7 @@ li {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  padding: 32px;
+  padding: 0 32px;
   gap: 10px;
 
   height: 600px;
@@ -2418,9 +2416,6 @@ li {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 .taahhutsuz-text-details {
-  height: 452.17px;
-  bottom: 134px;
-
   /* body para */
   font-family: "Prompt";
   font-style: normal;
@@ -2428,6 +2423,13 @@ li {
   font-size: 24px;
   line-height: 32px;
   /* or 133% */
+
+  color: #000000;
+
+  /* Inside auto layout */
+  flex: none;
+  order: 1;
+  flex-grow: 0;
 
   color: #000000;
 
@@ -2439,7 +2441,7 @@ li {
 ul {
   list-style: initial;
   margin: initial;
-  padding: 0px 8px;
+  padding: 10px;
 }
 
 .taahhutsuz-text-button {
