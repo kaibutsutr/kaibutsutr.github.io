@@ -1258,8 +1258,9 @@ a {
   line-height: 40px;
 
   width: 1140px;
-  height: 56px;
+  height: 50px;
   padding: 16px 0;
+  text-align: center;
 
   /* blue title */
 
@@ -2515,13 +2516,38 @@ ul {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  align-items: center;
   padding: 0 32px;
   gap: 10px;
-
   height: 570px;
   top: 64px;
 
   background: #ffffff;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.ucretsizGecis-button {
+  /* Button */
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: end;
+}
+.ucretsizGecis-text-details {
+  /* body para */
+  font-family: "Prompt";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 32px;
+  /* or 133% */
+
+  color: #000000;
+}
+.ucretsizGecis-text-details a {
+  color: #009ee3;
+  font-family: "Prompt";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 32px;
 }
