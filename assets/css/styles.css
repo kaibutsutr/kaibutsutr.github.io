@@ -2553,3 +2553,22 @@ ul {
   font-size: 24px;
   line-height: 32px;
 }
+
+.hakkimizda-text {
+  /* Destannet, kendi altyapısı ve Ulusal altyapı üzerinden hizmet veren bir İnternet Servis Sağlayıcısıdır. 2018 Yılında kendi altyapısı üzerinden İnternet hizmeti verebilmek için ilk çalışmalar başlatılmıştır. 31.05.2019 Tarihinde Bİlgi Teknolojileri İletişim Kurumundan İnternet Servis Sağlayıcılığı lisansı alarak hizmete başlamıştır.Türkiye geneli hizmet vermektedir. Destannet 2019 yılında Turkcell Superonline işbirliğiyle farklı noktalarda kendi metro ağını oluşturarak büyük başarılara imza atmıştır. Destannet ,Müşterilerinin çoğuna kendi altyapısı üzerinden hizmet ve çözümler sunmaktadır. Aynı zamanda Turkcell Superonline ve Turktelekom işbirliği ile de Türkiye’nin her bir yanına internet ve data hizmeti vermektedir. 31/05/2019    İnternet Servis Sağlayıcılığı (B)TÜRKİYE  31/05/2019    Altyapı İşletmeciliği Hizmeti (B)TÜRKİYE */
+
+  height: 572.31px;
+  left: 0px;
+  top: 23px;
+
+  font-family: "Prompt";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 32px;
+  /* or 133% */
+  display: flex;
+  align-items: center;
+
+  color: #000000;
+}
