@@ -2226,6 +2226,7 @@ li {
   height: 28px;
   left: calc(50% - 80px / 2 + 0.28px);
   top: 188px;
+  padding-top: 16px;
 
   font-family: "Prompt";
   font-style: normal;
@@ -2251,6 +2252,7 @@ li {
   flex-direction: column;
   text-align: center;
   align-items: center;
+  gap: 16px;
 
   color: #000000;
 }
